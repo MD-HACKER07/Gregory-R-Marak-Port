@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #333;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .about-text {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+      opacity: 0;
+      animation: fadeInUp 1.5s ease-out forwards;
+    }
+
+    .about-img {
+      max-width: 300px;
+      border-radius: 50%;
+      margin-top: 20px; /* Adjusted for top alignment */
+      animation: scaleUp 1s ease-out forwards;
+    }
+
+    .button {
+      background-color: #4595eb;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 30px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes scaleUp {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Image at the top and centered -->
+    <img src="assets/images/me.png" alt="Gregory R Marak's Photo" class="about-img">
+
+    <h1>About Me</h1>
+    
+    <div class="about-text">
+      <p>Hello! I'm Gregory R Marak, a passionate B.Tech Computer Science Engineering (CSE) student and an aspiring software engineer. I love diving deep into programming, problem-solving, and exploring the world of technology. In addition to my interest in software development, I have a strong background in Python programming, web development, and ethical hacking.</p>
+      <p>Currently, I'm pursuing my B.Tech in CSE at Sanjivani College of Engineering. I enjoy exploring new technologies, learning about cryptography, and experimenting with AI to solve real-world problems.</p>
+      <p>When I'm not coding or working on projects, I like to read, spend time with my friends, and play with animals. My favorite day is Sunday, which I spend relaxing and reflecting on my work.</p>
+    </div>
+
+    <a href="index.html" class="button">Connect with Me</a>
+  </div>
+</body>
+</html>

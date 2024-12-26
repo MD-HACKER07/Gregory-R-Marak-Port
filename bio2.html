@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #3a6186, #89253e);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s infinite;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 500px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .about-img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .about-img:hover {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 20px 0;
+      color: #ffcccb;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 10px 0;
+      color: #f3f3f3;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #ffffff;
+      text-decoration: none;
+      background: #ff6347;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+      background: #ff4500;
+      transform: translateY(-3px);
+    }
+
+    .details {
+      margin-top: 20px;
+      text-align: left;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      font-size: 0.9rem;
+      color: #f3f3f3;
+      line-height: 1.8;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .about-text p {
+        font-size: 0.9rem;
+      }
+
+      .details {
+        font-size: 0.8rem;
+      }
+
+      .about-img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Extra adjustments for very small screens (phones) */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .about-text p {
+        font-size: 0.8rem;
+      }
+
+      .details {
+        font-size: 0.7rem;
+      }
+
+      .about-img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Image at the top and centered -->
+    <img src="https://i.ibb.co/bLn8fff/me.png" alt="Gregory R Marak's Photo" class="about-img">
+
+    <h1>Gregory R Marak</h1>
+    
+    
+    <div class="details">
+        <p><strong>Roll Number:</strong> 20</p>
+        <p><strong>Class:</strong> FY B.Tech</p>
+        <p><strong>Branch:</strong> COMPUTER ENGINEERING</p>
+        <p><strong>Division:</strong> G</p>
+        <p><strong>Batch:</strong> G1</p>
+        <p><strong>Address:</strong> Kolmesalgre, Williamnagar, East Garo Hills</p>
+      </div>
+
+      <h1>About me</h1>
+    <div class="about-text">
+      <p>Hello! I'm Gregory R Marak, a passionate B.Tech Computer Science Engineering (CSE) student and an aspiring software engineer. I love diving deep into programming, problem-solving, and exploring the world of technology. In addition to my interest in software development, I have a strong background in Python programming, web development, and ethical hacking.</p>
+      <p>Currently, I'm pursuing my B.Tech in CSE at Sanjivani College of Engineering. I enjoy exploring new technologies, learning about cryptography, and experimenting with AI to solve real-world problems.</p>
+      <p>When I'm not coding or working on projects, I like to read, spend time with my friends, and play with animals. My favorite day is Sunday, which I spend relaxing and reflecting on my work.</p>
+    </div>
+
+
+    <a href="tel:+916009638761" class="button">Call Me</a>
+
+  </div>
+</body>
+</html>
